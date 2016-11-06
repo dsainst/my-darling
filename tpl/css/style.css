@@ -33,6 +33,14 @@ section {
   height: 61px;
   top: 120px;
   left: 20px;
+  -webkit-animation: cloud1 15s ease;
+  /* Safari 4+ */
+  -moz-animation: cloud1 15s ease;
+  /* Fx 5+ */
+  -o-animation: cloud1 15s ease;
+  /* Opera 12+ */
+  animation: cloud1 15s ease;
+  /* IE 10+, Fx 29+ */
 }
 .logo .cloud2 {
   background: url(../img/cloud2.png) no-repeat;
@@ -41,10 +49,18 @@ section {
   height: 43px;
   top: 50px;
   right: 0;
+  -webkit-animation: cloud2 5s ease-in;
+  /* Safari 4+ */
+  -moz-animation: cloud2 5s ease-in;
+  /* Fx 5+ */
+  -o-animation: cloud2 5s ease-in;
+  /* Opera 12+ */
+  animation: cloud2 5s ease-in;
+  /* IE 10+, Fx 29+ */
 }
 .about-head {
   position: relative;
-  margin-top: 50px;
+  margin-top: 37px;
   width: 444px;
   padding-bottom: 18px;
 }
@@ -58,11 +74,21 @@ section {
   width: 66px;
   height: 43px;
   bottom: 0;
-  right: 80px;
+  right: 90px;
   background: url(../img/cloud3.png) no-repeat;
+  -webkit-animation: cloud3 15s ease-out;
+  /* Safari 4+ */
+  -moz-animation: cloud3 15s ease-out;
+  /* Fx 5+ */
+  -o-animation: cloud3 15s ease-out;
+  /* Opera 12+ */
+  animation: cloud3 15s ease-out;
+  /* IE 10+, Fx 29+ */
 }
 .about-head .desc {
   max-width: 400px;
+  position: relative;
+  z-index: 1;
 }
 .about-head .desc p {
   font-size: 16px;
@@ -76,14 +102,14 @@ section {
   height: 108px;
   position: absolute;
   text-align: center;
-  top: 65px;
+  top: 50px;
   right: 0;
 }
 .menu-toggle .menu {
   width: 170px;
   height: 108px;
-  bottom: 0;
-  right: 80px;
+  z-index: 999;
+  position: fixed;
   background: url(../img/cloudmenu.png) no-repeat;
 }
 .menu-toggle .menu img {
@@ -91,6 +117,7 @@ section {
 }
 .tree {
   margin-bottom: 50px;
+  margin-top: 10px;
 }
 .tree .block {
   position: absolute;
@@ -133,61 +160,61 @@ section {
 .tree .block .item-1 {
   position: absolute;
   left: 243px;
-  top: 24px;
+  top: 34px;
 }
 .tree .block .item-2 {
   position: absolute;
   left: 550px;
-  top: -11px;
+  top: 0;
 }
 .tree .block .item-3 {
   position: absolute;
-  top: 24px;
+  top: 34px;
   right: 41px;
 }
 .tree .block .item-4 {
   position: absolute;
-  top: 108px;
+  top: 118px;
   right: 240px;
 }
 .tree .block .item-5 {
   position: absolute;
-  top: 158px;
+  top: 168px;
   left: 40px;
 }
 .tree .block .item-6 {
   position: absolute;
-  top: 211px;
+  top: 221px;
   left: 450px;
 }
 .tree .block .item-7 {
   position: absolute;
-  top: 336px;
+  top: 346px;
   left: 274px;
 }
 .tree .block .item-8 {
   position: absolute;
-  top: 303px;
+  top: 313px;
   left: 641px;
 }
 .tree .block .item-9 {
   position: absolute;
-  top: 280px;
+  top: 290px;
   right: 62px;
 }
 .tree .block .item-10 {
   position: absolute;
-  top: 421px;
+  top: 431px;
   left: 86px;
 }
 .tree .block .item-11 {
   position: absolute;
-  top: 480px;
+  top: 490px;
   left: 514px;
 }
 .tree .block .item-12 {
   position: absolute;
-  top: 464px;
+  top: 474px;
   right: 193px;
 }
 #about {
